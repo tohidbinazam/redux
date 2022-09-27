@@ -1,31 +1,31 @@
 import { DANGER, DARK, PRIMARY, SECONDARY, SUCCESS, WARNING } from "./types";
 
 export const bgPrimary = () =>{
-    return{
+    return {
         type : PRIMARY
     }
 }
 
 export const bgSecondary = () =>{
-    return{
+    return {
         type : SECONDARY
     }
 }
 
 export const bgSuccess = () =>{
-    return{
+    return {
         type : SUCCESS
     }
 }
 
 export const bgDanger = () =>{
-    return{
+    return {
         type : DANGER
     }
 }
 
 export const bgWarning = () =>{
-    return{
+    return {
         type : WARNING
     }
 }

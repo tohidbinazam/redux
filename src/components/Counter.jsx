@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+import { minusCounter, plusCounter } from '../redux/counter/action';
 
 const Counter = () => {
 
@@ -17,8 +18,8 @@ const Counter = () => {
             <div className={`bg-${color} card`}>
               <div className="card-body">
                 <h1 className='counter' > { counter } </h1>
-                <button onClick={ () => dispatch({ type: 'INCREMENT' })} className='btn btn-success m-2'> ++ </button>
-                <button onClick={ () => dispatch({ type: 'DECREMENT' })} className='btn btn-danger m-2'> -- </button>
+                <button onClick={ () => dispatch(plusCounter())} className='btn btn-success m-2'> ++ </button>
+                <button onClick={ () => dispatch(minusCounter())} className='btn btn-danger m-2'> -- </button>
               </div>
             </div>
           </div>
